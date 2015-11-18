@@ -1,4 +1,4 @@
-Forked from:
+Forked from: https://github.com/MorbZ/NodeUsbLed
 
 This is a NodeJS driver/framework for the "Dream Cheeky USB Message Board". It contains preinstalled plugins for weather, clock and Bitcoin exchange rate. Custom plugins can be easily written.
 
