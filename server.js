@@ -4,7 +4,10 @@ var countdown = require('./plugins/countdown');
 
 app.get('/start', function (req, res) {
     console.log('starting countdown');
-    countdown.start();
+    var minutes = 1;
+    if(req.query.minutes)
+	minutes = req.query.minutes
+    countdown.start(minutes);
     res.send('Sent start signal');
 });
 
@@ -25,4 +28,5 @@ var server = app.listen(3000, function () {
 var board = require('./board.js');
 board.connect();
 countdown.setBoard(board);
+countdown.stop();
 
