@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/MorbZ/NodeUsbLed#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "node-hid": "^0.5.1",
+    "request": "^2.66.0",
+    "sprintf-js": "^1.0.3",
+    "ws": "^0.8.0",
+    "xml2js": "^0.4.15"
   }
 }
