@@ -10,7 +10,7 @@ var showColon;
 var cur = 0;
 var totalSeconds = 0;
 var tickCount = 0;
-var blinkPercentStart = 90;
+var blinkPercentStart = 20;
 
 //tick
 function tick() {
@@ -24,10 +24,10 @@ function tick() {
 		var minutes = cur / 60;
 		var seconds = cur % 60;
 		var time = new Date(0,0,0,0,minutes, seconds);
-		if(tickCount % 2  == 1)
+		if(tickCount % 2 == 1)
 			cur = cur - 1;
 		var timeStr = sprintf('%02d%s%02d', time.getMinutes(), colon, time.getSeconds());
-		console.log(timeStr);
+		//console.log(timeStr);
 		text.addText(screen, timeStr, 0);
 		board.update(screen);
 		showColon = !showColon;
@@ -39,6 +39,7 @@ function tick() {
 
 //start
 function start(minutes) {
+	console.log('start('+minutes+')');
 	tickCount = 0;
 	totalSeconds = minutes * 60;
 	cur = minutes * 60;
@@ -52,6 +53,7 @@ exports.start = start;
 
 //stop
 function stop() {
+	console.log('stop()');
 	cur = 0;
 	clearInterval(interval);
 	clearInterval(displayInterval);
