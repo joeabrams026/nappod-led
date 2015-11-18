@@ -1,0 +1,23 @@
+{
+  "name": "nappod-led",
+  "version": "1.0.0",
+  "description": "This is a NodeJS driver/framework for the \"Dream Cheeky USB Message Board\". It contains preinstalled plugins for weather, clock and Bitcoin exchange rate. Custom plugins can be easily written.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorbZ/NodeUsbLed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorbZ/NodeUsbLed/issues"
+  },
+  "homepage": "https://github.com/MorbZ/NodeUsbLed#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
