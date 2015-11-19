@@ -17,7 +17,7 @@ function tick() {
 	var percentDone = (cur/totalSeconds)*100;
 	screen.clear();
 	tickCount++;
-	if( percentDone <  blinkPercentStart  && tickCount % 2 == 0 ){
+	if( percentDone <  blinkPercentStart && tickCount % 2 == 0 ){
 		board.update(screen);
 	}else{
 		var colon = showColon ? ':' : ' ';
